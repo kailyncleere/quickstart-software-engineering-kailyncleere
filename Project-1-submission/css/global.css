@@ -1,0 +1,19 @@
+.content {
+    width: 50%;
+    margin: 15%;
+    justify-content: center;
+}
+
+body::before {
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background-tropical.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    z-index: -1;
+}
