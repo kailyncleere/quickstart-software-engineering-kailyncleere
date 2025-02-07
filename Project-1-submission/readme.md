@@ -2,7 +2,7 @@
 
 -title "Cleere's Frogs"
 
-- "sign up" for news letter
+-"sign up" for news letter
 
 -"shop" pages on home page (frogs, plants, feeders)
 
