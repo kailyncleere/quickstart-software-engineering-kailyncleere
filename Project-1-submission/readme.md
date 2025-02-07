@@ -35,8 +35,8 @@
 -HTML
 -CSS
 
-# Github Code Repository
+# GitHub Code Repository
 -git@github.com:kailyncleere/quickstart-software-engineering-kailyncleere.git
 
-# Github Website URL
+# GitHub Website URL
 -https://kailyncleere.github.io/quickstart-software-engineering-kailyncleere/Project-1-submission/
