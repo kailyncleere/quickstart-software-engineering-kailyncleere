@@ -12,36 +12,40 @@ body::before {
     z-index: -1;
 }
 
-body {
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
-.header-logo {
-    margin: 0;
-
-}
-.header {
-    background-color: rgba(240, 248, 255, 0.689);
-}
-nav {
-    justify-content: space-around;
+.center-text {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    font-size: 2rem;
-    color: rgb(1 , 94, 6);
 }
 
-.header-text {
-    align-items:center;
+.paragraph-text {
+    align-items: center;
     justify-content: center;
-    color: rgb(1, 94, 6);
+    font-size: 2rem;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
-table {
- 
+.navbar {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-block: 0.5rem;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    padding-top: 6.5rem;
+}
+
+.table a{
+    color: rgb(0, 0, 0);
+}
+
+.img-text a {
+    color: rgb(0, 0, 0);
 }
