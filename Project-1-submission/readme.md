@@ -2,9 +2,8 @@
 
 -title "Cleere's Frogs"
 
--"sign up" for news letter
-
--"shop" pages on home page (frogs, plants, feeders)
+    -"sign up" for news letter
+    -"shop" pages on home page (frogs, plants, feeders)
 
 -frogs page
     -poison dart frogs icon
@@ -22,7 +21,8 @@
     -worms  icon
 
 -contact page
-
+    -contact form
+    
 -about page
 
 # Website Project Name
