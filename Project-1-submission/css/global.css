@@ -19,6 +19,10 @@ body::before {
     align-items: center;
 }
 
+.td-form {
+    text-align: right;
+}
+
 .paragraph-text {
     align-items: center;
     justify-content: center;
