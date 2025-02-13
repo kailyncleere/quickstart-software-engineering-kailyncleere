@@ -19,6 +19,10 @@ body::before {
     align-items: center;
 }
 
+.logo {
+    width: 30%;
+}
+
 .td-form {
     text-align: right;
 }
@@ -49,6 +53,8 @@ body::before {
 .multi-column {
     column-count: 4;
     column-span: 1;
+    padding-left: 10%;
+    padding-right: 25%;
 }
 
 .table a{
