@@ -42,7 +42,10 @@ body::before {
     padding-top: 6.5rem;
 }
 
-
+.multi-column {
+    column-count: 4;
+    column-span: 1;
+}
 
 .table a{
     color: rgb(0, 0, 0);
