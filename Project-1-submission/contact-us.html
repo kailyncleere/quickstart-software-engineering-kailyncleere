@@ -8,7 +8,9 @@
     </head>
     <body>
         <nav class="navbar">
-          <img src="img/frog-logo.png" alt="frog-logo.png" width="400" height="150" style="position: absolute; left: 0;">
+          <div>
+            <img src="img/frog-logo.png" alt="frog-logo.png" width="30%vh" height="auto" style="position: absolute; left: 0;">
+            </div>
             <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="contact-us.html">Contact Us</a>
@@ -20,7 +22,7 @@
             <table class="center-text">
               <tr>
                 <td>First Name:</td>
-                <td><input type="text" name="first"></td>
+                <td><input type="text" name="first" required></td>
               </tr>
               <tr>
                 <td>Last Name:</td>
@@ -28,15 +30,17 @@
               </tr>
               <tr>
                 <td align="right">Email:</td>
-                <td align="left"><input type="text" name="email"></td>
+                <td align="left"><input type="text" name="email" required></td>
               </tr>
               <tr>
                 <td>comments:</td>
-                <td><input type="text" name="comments"></td>
+                <td><input type="text" name="comments" required></td>
               </tr>
             </table>
             <div class="center-text">
               <input type="submit" value="Submit">
             </div>
           </form>
+          
+    </body>
 </html>
