@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
