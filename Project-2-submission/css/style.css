@@ -1,9 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 h1 {
   display: flex;
   justify-content: center;
+  font-family: "Tangerine", cursive;
 }
 
 form {
   display: flex;
   justify-content: center;
+}
+
+div .div-scroll-1 {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+  }
+  .div-scroll-1 {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+  }
+  .div-scroll-1 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
