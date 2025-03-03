@@ -24,7 +24,7 @@ function giphyApiDemo1()
 
   divdisplayinfo.innerText = msgText;
   
-  const _search_text = "cars" 
+  const _search_text = textsearch.value
   const _giphy_ApiKey = "svkiRPIsPepRcQXtceh4ur5ByjGqY7bq"
   const _giphy_result_data_file = "./data/giphy.json";
   const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}&q=${_search_text}&limit=25&rating=g`; 
@@ -156,7 +156,7 @@ divdisplayinfo.innerText = msgText;
           }
 
           _image = data.data[i].images.original.url;
-          _html += `<img width='100' height='100' src='${_image}'>`
+          _html += `<img width='200' height='200' src='${_image}' style='padding:5px'>`
         }
         
         _html += "</div>"

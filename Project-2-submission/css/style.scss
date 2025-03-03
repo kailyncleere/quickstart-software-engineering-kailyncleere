@@ -1,23 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 
+$head-text-color: rgb(6, 94, 1);
+
+.global-center-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-footer {
+    left: 0px;
+    bottom: 0px;
+}
 
 h1 {
-    display: flex;
-    justify-content: center;
     font-family: "Tangerine", cursive;
+    color: $head-text-color;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-}
 
 div{
     .div-scroll-1{
         display: flex;
-        justify-content: center;
-        width: 800px;
-        padding: 5px;
+        width: 500px;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 }
 
@@ -37,7 +46,13 @@ div{
         justify-content: center;
         width: 500px;
     }
+    .global-footer {
+        left: 0px;
+        bottom: 0px;
+        background-color: rgba(250, 128, 114, 0.347);
+    }
 }
+
 
 @media only screen and (max-width:400px) {
     h1 {
@@ -54,5 +69,10 @@ div{
         display: flex;
         justify-content: center;
         width: 300px;
+    }
+    .global-footer {
+        left: 0px;
+        bottom: 0px;
+        background-color: rgba(127, 255, 212, 0.335)
     }
 }
