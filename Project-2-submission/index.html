@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="./js/index.js"></script>
     </head>
-    <body>
+    <body onload="PageLoad()">
         <main class="global-center-page">
             <h1>Search for gifs!</h1> 
 
@@ -15,11 +15,11 @@
                 <div>
                     <input type="text" id="TxtSearch" placeholder="Enter Text To Search" maxlength="25">
                     <button>search</button>
-                    <a href="#">clear</a>
+                    <a href="#" onclick="TxtClear()">clear</a>
                 </div>
             </form>
             <p></p>
-                <div id="divdisplayinfo" class="div-scroll-1">
+                <div id="DivDisplayInfo" class="div-scroll-1">
                     </div>
                 </div>
             <p></p>
