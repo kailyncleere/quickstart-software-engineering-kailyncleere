@@ -24,7 +24,8 @@ function btnSearch(){
     let MsgTxt = "# index: btnSearch"
     console.log(MsgTxt.toUpperCase())
 
-    let TxtSearch = document.getElementById("TxtSearch").value;
+    const TxtSearch = document.getElementById("TxtSearch");
+    const SearchTxt = TxtSearch.value;
     const DivDisplayInfo = document.getElementById("DivDisplayInfo");
 
     if (TxtSearch == null){
@@ -53,9 +54,10 @@ function btnSearch(){
     TxtSearch.focus();
 }
 
-let TxtSearch = document.getElementById("TxtSearch").value;
+const TxtSearch = document.getElementById("TxtSearch");
+const SearchTxt = TxtSearch.value;
 const GiphyApiKey = "svkiRPIsPepRcQXtceh4ur5ByjGqY7bq";
-const GiphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${GiphyApiKey}&q=${TxtSearch}&limit=25&r
+const GiphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${GiphyApiKey}&q=${SearchTxt}&limit=25&r
 ating=g`;
 
 let RequestUrl = (GiphyApiKey.trim().length == 0)? GiphyResultDataFile : GiphyUrl;
