@@ -121,5 +121,6 @@ fetch(RequestUrl)
     DivDisplayInfo.innerText = error;
 });
 
+
 console.log("...continue fetching giphy data...demo of non blocking code")
 DivDisplayInfo.innerText = "...continue fetching giphy data...demo of non blocking code"

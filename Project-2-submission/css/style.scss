@@ -26,14 +26,15 @@ h1 {
 
 }
 
-
 div{
+
     .div-scroll-1{
         display: flex;
         width: 500px;
         word-wrap: break-word;
         overflow-x: hidden;
         overflow-y: auto;
+
     }
 }
 
