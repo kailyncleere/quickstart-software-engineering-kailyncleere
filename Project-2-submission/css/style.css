@@ -73,6 +73,12 @@ div .div-scroll-1 {
     width: 100%;
     background-color: rgba(250, 128, 114, 0.347);
   }
+  .global-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+  }
 }
 @media only screen and (max-width: 400px) {
   h1 {
@@ -95,5 +101,9 @@ div .div-scroll-1 {
     bottom: 0px;
     width: 100%;
     background-color: rgba(127, 255, 212, 0.335);
+  }
+  .global-nav ul {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

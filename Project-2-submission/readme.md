@@ -10,13 +10,12 @@ Kailyn Cleere
 - html
 - css
 - scss
-- bootstrap
 - javascript
 # Github Repository
 https://github.com/kailyncleere/quickstart-software-engineering-kailyncleere
 # Github URL
 https://kailyncleere.github.io/quickstart-software-engineering-kailyncleere/Project-2-submission/
 # Future Improvements
-- 
-- 
-- 
+- make a hover action to show images larger when hovering over them
+- add catagories to search by click
+- refine the sizing of the page to be more smooth transitioning

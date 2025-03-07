@@ -80,6 +80,12 @@ div{
         width: 100%;
         background-color: rgba(250, 128, 114, 0.347);
     }
+    .global-nav ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 5px;
+    }
 }
 
 
@@ -104,5 +110,9 @@ div{
         bottom: 0px;
         width: 100%;
         background-color: rgba(127, 255, 212, 0.335)
+    }
+    .global-nav ul {
+        display: flex;
+        flex-direction: column;
     }
 }
