@@ -22,56 +22,14 @@ function TxtClear(){
     TxtSearch.value = ""; 
     TxtSearch.focus(); 
    } 
-   
-    
-   function btnSearch(){ 
-   
-    let MsgTxt = "# index: btnSearch" 
-    console.log(MsgTxt.toUpperCase()) 
-   
-    const TxtSearch = document.getElementById("TxtSearch"); 
-    const SearchTxt = TxtSearch.value; 
-    const DivDisplayInfo = document.getElementById("DivDisplayInfo");  
-   
-    if (TxtSearch == null){ 
-   
-    MsgTxt = "# TxtSearch not found" 
-    console.log(MsgTxt) 
-    return false; 
-   } 
-   
-   
-   if (DivDisplayInfo == null){ 
-    MsgTxt = "# DivDisplayInfo not found" 
-    console.log(MsgTxt) 
-    return false; 
-   } 
-   
-    
-   if (TxtSearch.value.trim().length == 0){ 
-     MsgTxt = "# Please enter a valid search text" 
-     console.log(MsgTxt) 
-     DivDisplayInfo.innerText = MsgTxt; 
-     return false; 
-   } 
-   
-    
-   MsgTxt = "# Searching for: " + TxtSearch.value 
-   DivDisplayInfo.innerText = MsgTxt; 
-   
-    TxtSearch.focus(); 
-   
-} 
-   
   
 function btnSearch()
 {   
    const TxtSearch = document.getElementById("TxtSearch"); 
    const SearchTxt = TxtSearch.value; 
    
-   const GiphyResultDataFile = "./data/giphy2.json"
+   const GiphyResultDataFile = "./data/giphy.json"
    const GiphyApiKey = "svkiRPIsPepRcQXtceh4ur5ByjGqY7bq"; 
-   //const GiphyApiKey = ""; 
    const GiphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${GiphyApiKey}&q=${SearchTxt}&limit=25&rating=g`; 
     
    let RequestUrl = (GiphyApiKey.trim().length == 0)? GiphyResultDataFile : GiphyUrl; 

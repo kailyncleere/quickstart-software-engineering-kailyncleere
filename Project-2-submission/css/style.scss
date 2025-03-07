@@ -2,6 +2,25 @@
 
 $head-text-color: rgb(0, 0, 0);
 
+.global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.global-nav {
+    display: flex;
+    align-items: center;
+}
+
+.global-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
 body {
     background-image: url("../img/tiles.png");
 }
@@ -23,7 +42,8 @@ h1 {
     font-family: "Madimi One", sans-serif;
     color: $head-text-color;
     font-size: 4rem;
-
+    margin: 0%;
+    padding-right: 30%;
 }
 
 div{
