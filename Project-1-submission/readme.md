@@ -18,14 +18,18 @@
     -contact form
 -about page
 -Used as a shopping/herpetoligist site for consumers and hobbyists
-# Future improvements
--Create individual shopping pages for each catalog
--Make each page more pleasing to a customer’s point of view
--Using hyperlinked photos instead of text
 # Website Project Name
 -"Cleere's Frogs"
 # Author
 -Kailyn Cleere
+# User Stories
+- As a consumer, I want to be able to shop for products
+- As a herpetologist, I want to sign up for a newsletter to keep up with the community
+- As a customer, I want to reach out for support from the company
+# Future Improvements
+-Create individual shopping pages for each catalog
+-Make each page more pleasing to a customer’s point of view
+-Using hyperlinked photos instead of text
 # Website Technology
 -HTML 
 -CSS
