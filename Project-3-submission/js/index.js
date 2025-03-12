@@ -1,12 +1,14 @@
-const TaskBox = document.getElementById('Task-Box')
-const TaskList = document.getElementById('Task-List')
+const TaskBox = document.getElementById('Task-Box')//user input
+const TaskList = document.getElementById('Task-List')//list of tasks
 
+//add task function to append li element to ul
 function AddTask() {
     if(TaskBox.value === '') {
         alert("Please enter a task");
     }
     else {
         let li = document.createElement("li");
+        li.classList.toggle('unchecked');
         li.innerHTML = TaskBox.value;
         TaskList.appendChild(li);
         let span = document.createElement("span");
@@ -17,6 +19,7 @@ function AddTask() {
     SaveData();
 }
 
+//adding task on clicking add task button and removing task on clicking close button
 TaskList.addEventListener('click', function(e) {
     if(e.target.tagName === 'LI') {
         e.target.classList.toggle('checked');
@@ -28,6 +31,7 @@ TaskList.addEventListener('click', function(e) {
     }
 }, false);
 
+//adding task on pressing enter
 var input = document.getElementById("Task-Box");
 input.addEventListener("keypress", function(e){
     if(e.key === 'Enter') {
@@ -36,6 +40,7 @@ input.addEventListener("keypress", function(e){
     }
 });
 
+//saving to local storage
 function SaveData() {
     localStorage.setItem("data", TaskList.innerHTML);
 }

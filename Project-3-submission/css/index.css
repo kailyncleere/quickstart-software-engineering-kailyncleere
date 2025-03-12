@@ -52,7 +52,18 @@ input {
     font-weight: 14px;
 }
 
-button {
+#SortBtn {
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#Add-Task {
     border: none;
     outline: none;
     padding: 16px 50px;
