@@ -5,10 +5,27 @@
     font-family: verdana, sans-serif;
 }
 
+.Nav-Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav-Links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .Container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #153677, #cc00ff);
     padding: 10px;
 }
 
@@ -22,7 +39,7 @@
 }
 
 .ToDoApp h2 {
-    color: #002765;
+    color: #5d0174;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -56,7 +73,7 @@ input {
     border: none;
     outline: none;
     padding: 6px 15px;
-    background: #ff5945;
+    background: #5d0174;
     color: #fff;
     font-size: 12px;
     cursor: pointer;
@@ -67,14 +84,14 @@ input {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #5d0174;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
 }
 
-ul li {
+ul.Task-List li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -83,7 +100,7 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+ul.Task-List li::before {
     content: ' ';
     position: absolute;
     height: 28px;
@@ -105,7 +122,7 @@ ul li.checked::before {
     background-image: url(../img/checked.png);
 }
 
-ul li span {
+ul.Task-List li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -118,6 +135,6 @@ ul li span {
     border-radius: 50%; 
 }
 
-ul li span:hover {
+ul.Task-List li span:hover {
     background: #edeef0; 
 }

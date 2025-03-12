@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #cc00ff);
+    padding: 10px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.Nav-Links {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-block: 0.5rem;
+}
+
+.Nav-Links a {
+    color: rgb(0, 0, 0);
+    padding-top: 6.5rem;
+}
+
+.td-form {
+    text-align: right;;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+table td {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
