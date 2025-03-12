@@ -9,5 +9,10 @@ function AddTask() {
         let li = document.createElement("li");
         li.innerHTML = TaskBox.value;
         TaskList.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = '\u00D7';
+        li.appendChild(span);
     }
+    TaskBox.value = '';
 }
+
