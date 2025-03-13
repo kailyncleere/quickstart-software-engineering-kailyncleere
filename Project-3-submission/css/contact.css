@@ -1,7 +1,8 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: verdana, sans-serif;
 }
 
 .Container {
@@ -16,31 +17,42 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5px;
+    color: #5d0174;
+}
+
+p {
+    color: #5d0174;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 20px;
+}
+
+.Nav-Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav-Links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 form {
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
+    margin: 80px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
-}
-
-.Nav-Links {
-    font-size: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    padding-block: 0.5rem;
-}
-
-.Nav-Links a {
-    color: rgb(0, 0, 0);
-    padding-top: 6.5rem;
 }
 
 .td-form {
@@ -64,4 +76,16 @@ table td {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    background: #5d0174;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 10px;
 }
