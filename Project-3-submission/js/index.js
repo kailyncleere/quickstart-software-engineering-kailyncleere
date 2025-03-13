@@ -46,7 +46,23 @@ input.addEventListener("keypress", function(e){
 //filtering tasks
 function FilterTask(status) {
     CurrentFilter = status;
-    let tasks = TaskList.getElementsByTagName('li');
+    let tasks = Array.from(TaskList.getElementsByTagName('li'));
+
+    if (status === 'all') {
+        tasks.sort((a,b) => {
+            if (a.classList.contains('checked') && !b.classList.contains('checked')) {
+                return 1;
+            }
+            else if (!a.classList.contains('checked') && b.classList.contains('checked')) {
+                return -1;
+            }
+            else {
+                return 0;
+            }
+        })
+        tasks.forEach(task => TaskList.appendChild(task));
+    }
+
     for (let task of tasks) {
         switch(status) {
             case 'all':
