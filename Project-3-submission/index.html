@@ -14,21 +14,23 @@
                 </ul>
             </nav>
             <div class="ToDoApp">
-                <h2>To-Do List <img src="./img/logo.png" alt="ToDo-Logo.png"></h2>
-                <div class="InputField">
-                    <input type="text" id="Task-Box" placeholder="Enter a task">
-                    <button id="Add-Task" onclick="AddTask()">Add Task</button>
+                <div class="ToDoForm">
+                    <h2>To-Do List <img src="./img/logo.png" alt="ToDo-Logo.png"></h2>
+                    <div class="InputField">
+                        <input type="text" id="Task-Box" placeholder="Enter a task">
+                        <button id="Add-Task" onclick="AddTask()">Add Task</button>
+                    </div>
+                    <div class="Order-Tasks">
+                        <button class="SortBtn" id="AllTaskBtn">All</button>
+                        <button class="SortBtn" id="CompleteTaskBtn">Complete</button>
+                        <button class="SortBtn" id="IncompleteTaskBtn">Incomplete</button>
+                    </div>
+                    <ul id="Task-List" class="Task-List">
+                        <!-- <li class="checked">Task 1</li>
+                        <li class= "unchecked">Task 2</li>
+                        <li class= "unchecked">Task 3</li> -->
+                    </ul>
                 </div>
-                <div class="Order-Tasks">
-                    <button class="SortBtn" id="AllTaskBtn">All</button>
-                    <button class="SortBtn" id="CompleteTaskBtn">Complete</button>
-                    <button class="SortBtn" id="IncompleteTaskBtn">Incomplete</button>
-                </div>
-                <ul id="Task-List" class="Task-List">
-                    <!-- <li class="checked">Task 1</li>
-                    <li class= "unchecked">Task 2</li>
-                    <li class= "unchecked">Task 3</li> -->
-                </ul>
             </div>    
         </div>
         <script src="./js/index.js"></script>
