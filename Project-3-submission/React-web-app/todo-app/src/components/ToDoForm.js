@@ -35,17 +35,16 @@ function ToDoForm(props) {
         <form className="ToDo-Form" onSubmit={HandleSubmit}>
             <input
                 type="text"
-                placeholder='Add a task'
+                placeholder={props.edit ? 'Update your item' : 'Add a task'}
                 value={input}
                 name='text'
                 className='ToDo-Input'
                 onChange={HandleChange}
-                />
+                ref={inputRef}
+            />
+            <button className='ToDo-Button'>{props.edit ? 'Update' : 'Add Task'}</button>
+        </form>
+    );
+}
 
-                <button className='ToDo-Button'>Add Task</button>
-                
-            </form>
-        )
-    }
-
-export default ToDoForm
+export default ToDoForm;
