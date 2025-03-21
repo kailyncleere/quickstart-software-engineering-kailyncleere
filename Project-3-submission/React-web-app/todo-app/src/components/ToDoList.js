@@ -1,9 +1,31 @@
-import React, {useState} from 'react'
-import ToDoForm from './ToDoForm'
+import React, { useState, useEffect } from 'react';
+import ToDoForm from './ToDoForm';
+import ToDo from './ToDo';
 
 function ToDoList() {
     const [todos, setTodos] = useState([]);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [filter, setFilter] = useState('all');
 
+    // Load tasks from local storage when the page loads
+    useEffect(() => {
+        const storedTodos = localStorage.getItem('todos');
+        if (storedTodos) {
+            setTodos(JSON.parse(storedTodos));
+            console.log('Tasks loaded from local storage:', JSON.parse(storedTodos));
+        }
+        setIsLoaded(true);
+    }, []);
+
+    // Save tasks to local storage whenever the tasks are changed
+    useEffect(() => {
+        if (isLoaded) {
+            localStorage.setItem('todos', JSON.stringify(todos));
+            console.log('Tasks saved to local storage:', todos);
+        }
+    }, [todos, isLoaded]);
+
+    // Adds a new task to the list
     const AddToDo = todo => {
         const trimmedText = todo.text.trim();
 
@@ -28,6 +50,34 @@ function ToDoList() {
         setTodos(updatedTodos);
         console.log('Task completed:', updatedTodos);
     };
+
+    // Removes a task from the list
+    const removeTodo = id => {
+        const updatedTodos = todos.filter(todo => todo.id !== id);
+        setTodos(updatedTodos);
+        console.log('Task removed:', updatedTodos);
+    };
+
+    // Updates a tasks text
+    const updateTodo = (todoId, newValue) => {
+        if (!newValue.text || /^\s*$/.test(newValue.text)) {
+            return;
+        }
+        const updatedTodos = todos.map(item => (item.id === todoId ? newValue : item));
+        setTodos(updatedTodos);
+        console.log('Task updated:', updatedTodos);
+    };
+
+    // Filter tasks based on the current filter of all complete or incomplete
+    const filteredTodos = todos.filter(todo => {
+        if (filter === 'completed') {
+            return todo.isComplete;
+        } else if (filter === 'uncompleted') {
+            return !todo.isComplete;
+        } else {
+            return true;
+        }
+    });
 
     // Actual display of the to-do list
     return (
