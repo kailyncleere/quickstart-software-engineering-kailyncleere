@@ -1,27 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-    function ToDoForm(props) {
-        const [input, setInput] = useState('');
+// ToDoForm component for adding and updating tasks from the ToDoList component
+function ToDoForm(props) {
 
-        const HandleChange = e => {
-            setInput(e.target.value);
-        };
+    // Sets the input value to the value of the task being edited 
+    const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
-        const HandleSubmit = e => {
-            e.preventDefault();
-        
+    // Focuses on the input field when the page loads
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        inputRef.current.focus();
+    }, []);
+
+    // Updates the input value when the user types in the input field
+    const HandleChange = e => {
+        setInput(e.target.value);
+    };
+
+    // Submits the task to the ToDoList component
+    const HandleSubmit = e => {
+        e.preventDefault();
+
         props.onSubmit({
-            id: Math.floor(Math.random() * 10000),
+            id: props.edit ? props.edit.id : Math.floor(Math.random() * 10000),
             text: input
         });
 
         setInput('');
     };
 
-
-        return (
-            <form className="ToDo-Form" onSubmit={HandleSubmit}> 
-                <input
+    // Returns the form for adding and updating tasks
+    return (
+        <form className="ToDo-Form" onSubmit={HandleSubmit}>
+            <input
                 type="text"
                 placeholder='Add a task'
                 value={input}
