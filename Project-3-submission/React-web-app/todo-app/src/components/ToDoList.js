@@ -79,17 +79,25 @@ function ToDoList() {
         }
     });
 
+    // Sort tasks to move completed tasks to the bottom in the "all" filter
+    const sortedTodos = filteredTodos.sort((a, b) => {
+        if (a.isComplete === b.isComplete) {
+            return 0;
+        }
+        return a.isComplete ? 1 : -1;
+    });
+
     // Actual display of the to-do list
     return (
         <div>
-            <h1>To-Do List</h1>
+            <h1 className='TitleH1'>To-Do List <img src="/logo.png" alt="Logo" /></h1>
             <ToDoForm onSubmit={AddToDo} />
             <div>
-                <button onClick={() => setFilter('all')}>All</button>
-                <button onClick={() => setFilter('completed')}>Complete</button>
-                <button onClick={() => setFilter('uncompleted')}>Incomplete</button>
+                <button className="FilterBtn" onClick={() => setFilter('all')}>All</button>
+                <button className="FilterBtn" onClick={() => setFilter('completed')}>Complete</button>
+                <button className="FilterBtn" onClick={() => setFilter('uncompleted')}>Incomplete</button>
             </div>
-            <ToDo todos={filteredTodos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+            <ToDo todos={sortedTodos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
         </div>
     );
 }

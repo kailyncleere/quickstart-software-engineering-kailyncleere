@@ -27,22 +27,24 @@ function ToDoForm(props) {
             text: input
         });
 
-        setInput('');
+        setInput(''); // Clear the input field after submission
     };
 
     // Returns the form for adding and updating tasks
     return (
         <form className="ToDo-Form" onSubmit={HandleSubmit}>
-            <input
-                type="text"
-                placeholder={props.edit ? 'Update your item' : 'Add a task'}
-                value={input}
-                name='text'
-                className='ToDo-Input'
-                onChange={HandleChange}
-                ref={inputRef}
-            />
-            <button className='ToDo-Button'>{props.edit ? 'Update' : 'Add Task'}</button>
+            <div className="ToDo-Input">
+                <input
+                    type="text"
+                    placeholder={props.edit ? 'Update your item' : 'Add a task'}
+                    value={input}
+                    name='text'
+                    className='ToDo-Input'
+                    onChange={HandleChange}
+                    ref={inputRef}
+                />
+                <button className='ToDo-Button'>{props.edit ? 'Update' : 'Add Task'}</button>
+            </div>
         </form>
     );
 }

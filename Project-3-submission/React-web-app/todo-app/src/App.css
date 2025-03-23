@@ -1,0 +1,138 @@
+/* ToDo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana, sans-serif;
+}
+
+
+/* Buttons and Icons */
+
+.FilterBtn {
+  border: none;
+  outline: none;
+  padding: 6px 15px;
+  background: #5d0174;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-icon {
+  color: darkred;
+}
+
+.edit-icon {
+  color: #153677;
+}
+
+.complete-icon {
+  color: #5d0174;
+}
+
+.ActionBtns {
+  cursor: pointer;
+  font-size: 1.25em;
+  stroke-width: .75px;
+}
+
+.ToDo-Button {
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  background: #5d0174;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+
+/* ToDoForm */
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgba(105, 105, 105, 0.034);
+  border-radius: 30px;
+} 
+
+.complete {
+  text-decoration: line-through;
+}
+
+.TitleH1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5d0174;
+  margin-bottom: 10px;
+}
+
+.TitleH1 img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.ToDo-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ToDo-Input {
+  display: flex;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.ToDo-Input input {
+  padding: 10px 0px 0px 10px;
+}
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #cc00ff);
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
