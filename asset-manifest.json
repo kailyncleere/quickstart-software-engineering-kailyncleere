@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/quickstart-software-engineering-kailyncleere/React-web-app/todo-app/static/css/main.89ec99bb.css",
+    "main.js": "/quickstart-software-engineering-kailyncleere/React-web-app/todo-app/static/js/main.23cffcf5.js",
+    "index.html": "/quickstart-software-engineering-kailyncleere/React-web-app/todo-app/index.html",
+    "main.89ec99bb.css.map": "/quickstart-software-engineering-kailyncleere/React-web-app/todo-app/static/css/main.89ec99bb.css.map",
+    "main.23cffcf5.js.map": "/quickstart-software-engineering-kailyncleere/React-web-app/todo-app/static/js/main.23cffcf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89ec99bb.css",
+    "static/js/main.23cffcf5.js"
+  ]
+}
